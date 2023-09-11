@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css
+" rel="stylesheet">
+    <title>Sweet Alert</title>
+</head>
+
+<body class="bg-light">
+
+    <body class="bg-light">
+        <div class="container py-3">
+            <h1 class="text-center h3">Criando alertas elegantes com Sweetalert2</h1>
+            <div class="text-center">
+                <img class="img-fluid" src="https://sweetalert2.github.io/images/SweetAlert2.png">
+            </div>
+            <button class="btn btn-dark container" onclick="alerta()">Botão</button>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function alerta() {
+                Swal.fire({
+                   text:'Sucesso ao entrar',
+                   icon:'warning',
+                   title: 'Atenção',
+                   showCancelButton: true
+                }).then((result) =>{
+                    if(result.isDemissed){
+                       alert('Cancelou');
+                    }
+                })
+            }
+        </script>
+    </body>
+
+</html>
